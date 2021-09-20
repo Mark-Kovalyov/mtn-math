@@ -1,2 +1,4 @@
 # MTN-math
 
+* Java
+* Scala
