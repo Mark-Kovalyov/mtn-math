@@ -56,6 +56,7 @@ object Statistics {
 
   def linearRegression(list : LazyList[Point[Double]]): (Double, Double) = {
     // TODO
+    //val p : Point[Double] =
     (0.0, 0.0)
   }
 
