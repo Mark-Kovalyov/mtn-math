@@ -23,7 +23,7 @@ object Statistics {
       else
         list.head #:: toLazyList(list.tail)
 
-  def mean(list : List[Double]) : Double = list.reduce((x,y) => x + y) / list.length
+  def mean(list : List[Double]) : Double = list.sum / list.length
 
   def mean_safe(list : List[Double]) : Option[Double] =
     if list.isEmpty then
@@ -58,6 +58,20 @@ object Statistics {
     // TODO
     //val p : Point[Double] =
     (0.0, 0.0)
+  }
+
+  def fact(x : Int) : Long = {
+    assert(x >= 0)
+    var prod : Long = 1
+    for(i <- 1 to x) prod = prod * i
+    prod
+  }
+
+  def fact(x : Long) : Long = {
+    assert(x >= 0L)
+    var prod : Long = 1
+    for(i <- 1L to x) prod = prod * i
+    prod
   }
 
 
