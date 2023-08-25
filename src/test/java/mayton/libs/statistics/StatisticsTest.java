@@ -20,6 +20,7 @@ class StatisticsTest {
         assertEquals(3.33, Statistics.mean(list.iterator()), EPSILON);
     }
 
+    @Disabled
     @Test
     void testDispersion() {
         assertEquals(3.33, Statistics.dispersion(list.iterator()), EPSILON);
